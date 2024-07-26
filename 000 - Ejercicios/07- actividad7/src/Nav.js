@@ -1,0 +1,26 @@
+import {NavLink} from "react-router-dom";
+import React from 'react'
+import './App.css';
+
+function Nav() {
+  return (
+    <div>
+        <nav>
+            <NavLink className={
+                ({isActive})=>(isActive ? "activado" : null)
+                    }to="/">Pagina 1</NavLink>
+            <NavLink className={
+                ({isActive})=>(isActive ? "activado" : null)
+                    } to="/pagina2">Pagina 2</NavLink>
+            <NavLink className={
+                ({isActive})=>(isActive ? "activado" : null)
+                    } to="/pagina3">Pagina 3</NavLink>
+            <NavLink className={
+                ({isActive})=>(isActive ? "activado" : null)
+                    } to="/pagina4/G">Pagina 4</NavLink>
+        </nav>
+    </div>
+  )
+}
+
+export default Nav
